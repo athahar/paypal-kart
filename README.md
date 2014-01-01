@@ -1,4 +1,3 @@
-paypal-kart
-===========
+# Mazkoozi kart
 
-kart created using krakenjs
+"Shopping cart"
