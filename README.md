@@ -1,3 +1,3 @@
-# Mazkoozi kart
+# Paypal kart
 
 "Shopping cart"
