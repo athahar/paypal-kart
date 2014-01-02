@@ -5,13 +5,18 @@ var kraken = require('kraken-js'),
     db = require('./lib/database'),
     language = require('./lib/language'),
     express = require('express'),
+    paypal = require('paypal-rest-sdk'),
     app = {};
 
 
 app.configure = function configure(nconf, next) {
 
+    // db config
     db.config(nconf.get('databaseConfig'));
-    // Async method run on startup.
+    
+    //Configure the PayPal SDK
+    paypal.configure(nconf.get('paypalConfig'));
+
     next(null);
 };
 
