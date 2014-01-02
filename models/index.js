@@ -6,3 +6,4 @@ module.exports = function IndexModel() {
         name: 'paypal-kart'
     };
 };
+
